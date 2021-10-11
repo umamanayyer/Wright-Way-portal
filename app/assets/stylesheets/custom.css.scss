@@ -38,30 +38,38 @@
   }
   
 .jumbotron{
-  margin-top: -50px;
+ 
   height: 400px;
 }
 .bgr{
+    padding-top: 30px;
     font-weight: bold;
     font-family: 'Ultra', sans-serif;   
-    font-size: 34px;
+    font-size: 30px;
     line-height: 42px;
     text-transform: uppercase;
     text-shadow: 0 2px white, 0 3px #777;
   
 }
 .width-flash{
- margin-left: 20%;
- margin-right: 20%;
+ margin-left: 10%;
+ margin-right: 10%;
   
 }
   /* Other Classes for Page Styling */
   .container{
     padding-top: 50px;
   }
-  .navbar-toggler-icon{
-    background-color: rgba(255, 255, 255, 0.644);
-    border-radius: 5px;
+
+  .box{
+    height: 30%;
+  }
+  .box2{
+    height: 70%;
+  }
+  .width-div{
+    width: 80%;
+    max-height: 75%;
   }
   /* pagination styling */
   .flickr_pagination {
