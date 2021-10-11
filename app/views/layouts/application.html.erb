@@ -3,6 +3,7 @@
   <head>
     <title>The Wright Way</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -11,9 +12,11 @@
   </head>
 
   <body class="d-flex flex-column">
+  <%= render 'layouts/navbar' %>
     <div id="page-content">
+        <%= render 'layouts/messages' %>
         <%= yield %>
-   </div>
-   <%= render 'layouts/footer' %>
+  </div>
+  <%= render 'layouts/footer' %>
   </body>
 </html>
