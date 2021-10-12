@@ -1,0 +1,26 @@
+<div class="box bg-dark text-white">
+    <h1 class="display-2 pr-3 pl-3 text-center bgr mt-5">Welcome <%= @user.email.split("@")[0] %></h1>
+</div> 
+<div class="box2 text-wrap overflow-auto text-center pt-5">
+  <div class="btn-group text-center">
+    <button class="btn btn-light btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Large button
+    </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">How to do..</a>
+      <button class="dropdown-item dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Check Sheets
+      </button>
+      <div class="dropdown-menu">
+        <%= link_to 'Farm car/ute check', ute_path ,class: 'dropdown-item' %>
+        <%= link_to 'Tractor Check', tractor_path ,class: 'dropdown-item' %>
+        <%= link_to 'HWD Bike Check', hwd_path ,class: 'dropdown-item' %>
+        <%= link_to '2 Wheel Bike Check', wheel_path ,class: 'dropdown-item' %>
+        <%= link_to 'S lage Wagon Check', wagon_path ,class: 'dropdown-item' %>
+        <%= link_to 'Dairy Shed weekly Check', weekly_path ,class: 'dropdown-item' %>
+        <%= link_to 'Dairy Shed monthly Check', monthly_path ,class: 'dropdown-item' %>
+      </div>
+  </div>
+</div>
+</div>
+
