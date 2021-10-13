@@ -1,0 +1,37 @@
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+<div class="container">
+<div class="row">
+    <div class="col-md-12">
+        <div class=" bg-light card">
+            <div class="bg-light card-body">
+            <h5 class="display-2 bg-light text-dark text-center bgr">List of Users</h5>
+            </div>
+            <div class="table-responsive">
+                <table class="table no-wrap user-table mb-0 shadow text-white bg-dark rounded">
+                  <thead>
+                    <tr>
+                      <th scope="col" class="border-0 text-uppercase font-medium pl-4">#</th>
+                      <th scope="col" class="border-0 text-uppercase font-medium">Email</th>
+                      <th scope="col" class="border-0 text-uppercase font-medium">First Name</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  <% @users.each do |list| %>
+                    <tr>
+                      <td class="pl-4"><%= list.id %></td>
+                      <td>
+                          <h5 class="font-medium mb-0"><%= list.email.split("@")[0] %> </h5> 
+                      </td>
+                      <td>
+                          <span class="text-muted">Visual Designer</span><br>
+                      </td>
+                    </tr>
+                    <% end %>
+                  </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
