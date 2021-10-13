@@ -117,29 +117,66 @@
         border: 0 solid transparent;
         border-radius: 0;
     }
-    .btn-circle.btn-lg, .btn-group-lg>.btn-circle.btn {
-        width: 50px;
-        height: 50px;
-        padding: 14px 15px;
-        font-size: 18px;
-        line-height: 23px;
-    }
+    
     .text-muted {
         color: #8898aa!important;
     }
     [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
         cursor: pointer;
     }
-    .btn-circle {
-        border-radius: 100%;
-        width: 40px;
-        height: 40px;
-        padding: 10px;
-    }
     .user-table tbody tr .category-select {
         max-width: 150px;
         border-radius: 20px;
     }
-
-
-   
+    .scrollbar
+    {
+      background: #F5F5F5;
+      overflow-x: scroll;
+      overflow-y: hidden;
+    }
+    .scrollbarV
+    {
+      background: #F5F5F5;
+      overflow-y: hidden;
+      overflow-x: hidden;
+    }
+    
+    #style-1::-webkit-scrollbar-track
+    {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      border-radius: 10px;
+      background-color: #F5F5F5;
+    }
+    
+    #style-1::-webkit-scrollbar
+    {
+      width: 12px;
+      background-color: #F5F5F5;
+    }
+    
+    #style-1::-webkit-scrollbar-thumb
+    {
+      border-radius: 10px;
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+      background-color: #555;
+    }
+    
+    #style-2::-webkit-scrollbar-track
+    {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      border-radius: 10px;
+      background-color: #F5F5F5;
+    }
+    
+    #style-2::-webkit-scrollbar
+    {
+      width: 12px;
+      background-color: #F5F5F5;
+    }
+    
+    #style-2::-webkit-scrollbar-thumb
+    {
+      border-radius: 10px;
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+      background-color: #555;
+    }

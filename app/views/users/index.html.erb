@@ -1,19 +1,24 @@
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 
 <div class="container">
 <div class="row">
     <div class="col-md-12">
-        <div class=" bg-light card">
-            <div class="bg-light card-body">
-            <h5 class="display-2 bg-light text-dark text-center bgr">List of Users</h5>
+        <div class="card">
+            <div class="card-body">
+              <h5 class="display-2 bg-light text-dark text-center bgr">List of Users</h5>
             </div>
-            <div class="table-responsive">
-                <table class="table no-wrap user-table mb-0 shadow text-white bg-dark rounded">
+            <div class="table-responsive" id="style-1">
+                <table class="table no-wrap user-table mb-0 shadow text-white bg-dark rounded scrollbar">
                   <thead>
                     <tr>
-                      <th scope="col" class="border-0 text-uppercase font-medium pl-4">#</th>
-                      <th scope="col" class="border-0 text-uppercase font-medium">Email</th>
-                      <th scope="col" class="border-0 text-uppercase font-medium">First Name</th>
+                    <th scope="col" class="border-0 text-uppercase font-medium pl-4">id 
+                    </th>
+                    <th scope="col" class="border-0 text-uppercase font-medium">First name</th>
+                    <th scope="col" class="border-0 text-uppercase font-medium">last name</th>
+                    <th scope="col" class="border-0 text-uppercase font-medium">prefered name</th>
+                    <th scope="col" class="border-0 text-uppercase font-medium">role</th>
+                    <th scope="col" class="border-0 text-uppercase font-medium">email</th>
+                    <th scope="col" class="border-0 text-uppercase font-medium">status</th>
+                    <th scope="col" class="border-0 text-uppercase font-medium">farm</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -21,10 +26,25 @@
                     <tr>
                       <td class="pl-4"><%= list.id %></td>
                       <td>
-                          <h5 class="font-medium mb-0"><%= list.email.split("@")[0] %> </h5> 
+                          <h6 class="font-medium mb-0"><%= list.first_name %></h5> 
                       </td>
                       <td>
-                          <span class="text-muted">Visual Designer</span><br>
+                        <span class="text-muted"><%= list.last_name %></span>
+                      </td>
+                      <td>
+                        <span class="text-muted"><%= list.prefered_name %></span>
+                      </td>
+                      <td>
+                        <span class="text-muted"><%= list.email %></span>
+                      </td>
+                      <td>
+                        <span class="text-muted"><%= list.role %></span>
+                      </td>
+                      <td>
+                        <span class="text-muted"><%= list.status %></span>
+                      </td>
+                      <td>
+                        <span class="text-muted"><%= list.farm %></span>
                       </td>
                     </tr>
                     <% end %>

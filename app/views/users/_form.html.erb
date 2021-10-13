@@ -10,11 +10,60 @@
             </div>
         </div>
         <div class="form-group row"> 
-        <%= f.label :password, class: 'col-sm-2 col-form-label text-light'%>
-        <div class="col-sm-10">
-          <%= f.password_field :password, class: 'form-control shadow rounded', placeholder: 'Enter Password'  %>
+          <%= f.label :password, class: 'col-sm-2 col-form-label text-light'%>
+          <div class="col-sm-10">
+            <%= f.password_field :password, class: 'form-control shadow rounded', placeholder: 'Enter Password'  %>
+          </div>
         </div>
-    </div>
+        <div class="form-group row"> 
+          <%= f.label :first_name, class: 'col-sm-2 col-form-label text-light'%>
+          <div class="col-sm-10">
+            <%= f.text_field :first_name, class: 'form-control shadow rounded', placeholder: 'Enter first name'  %>
+          </div>
+        </div>
+        <div class="form-group row"> 
+          <%= f.label :last_name, class: 'col-sm-2 col-form-label text-light'%>
+          <div class="col-sm-10">
+            <%= f.text_field :last_name, class: 'form-control shadow rounded', placeholder: 'Enter last name'  %>
+          </div>
+        </div>
+        <div class="form-group row"> 
+          <%= f.label :prefered_name, class: 'col-sm-2 col-form-label text-light'%>
+          <div class="col-sm-10">
+            <%= f.text_field :prefered_name, class: 'form-control shadow rounded', placeholder: 'Enter prefered name'  %>
+          </div>
+        </div>
+        <div class="form-group row"> 
+          <%= f.label :role, class: 'col-sm-2 col-form-label text-light'%>
+          <div class="col-sm-10">
+            <%= f.text_field :role, class: 'form-control shadow rounded', placeholder: 'Select Role'  %>
+          </div>
+        </div>
+        <div class="form-group row"> 
+          <%= f.label :status, class: 'col-sm-2 col-form-label text-light'%>
+          <div class="col-sm-10">
+            <%= f.text_field :status, class: 'form-control shadow rounded', placeholder: 'Select Status'  %>
+          </div>
+        </div>
+        
+      
+
+
+       
+
+        <div class="form-group row"> 
+          <%= f.label :farm, class: 'col-sm-2 col-form-label text-light'%>
+          <div class="col-sm-10 ">
+          <select class="browser-default custom-select">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        </div>
+        
+
         <div class="form-group row justify-content-center">
           <%=f.submit(@user.new_record? ? "Create New User" : "Update account", class:'btn btn-outline-light btn-lg')  %>
         </div>
@@ -22,4 +71,6 @@
     </div>
   </div>
 </div>
+
+
 
