@@ -10,5 +10,6 @@ class Vehicle <ApplicationRecord
   validates :wof_expire, presence: true
   validates :service_due, presence: true
   validates :tyre_pressure, presence: true
+ 
 
 end
