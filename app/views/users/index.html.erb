@@ -12,39 +12,46 @@
                     <tr>
                       <th scope="col" class="border-0 text-uppercase font-medium pl-4">id 
                       </th>
+                     
                       <th scope="col" class="border-0 text-uppercase font-medium">First name</th>
                       <th scope="col" class="border-0 text-uppercase font-medium">last name</th>
                       <th scope="col" class="border-0 text-uppercase font-medium">prefered name</th>
                       <th scope="col" class="border-0 text-uppercase font-medium">role</th>
-                      <th scope="col" class="border-0 text-uppercase font-medium">email</th>
                       <th scope="col" class="border-0 text-uppercase font-medium">status</th>
                       <th scope="col" class="border-0 text-uppercase font-medium">farm</th>
+                      <th scope="col" class="border-0 text-uppercase font-medium">email</th>
+                     
+                      
                     </tr>
                   </thead>
                   <tbody>
                   <% @users.each do |list| %>
                     <tr>
                       <td class="pl-4"><%= list.id %></td>
+                     
+                     
+                      
                       <td>
-                          <h6 class="font-medium mb-0"><%= list.first_name %></h5> 
+                          <h6 class="font-medium mb-0"><%= list.first%></h5> 
                       </td>
                       <td>
-                        <span class="text-muted"><%= list.last_name %></span>
+                        <span class="text-muted"><%= list.last %></span>
                       </td>
                       <td>
-                        <span class="text-muted"><%= list.prefered_name %></span>
+                        <span class="text-muted"><%= list.prefered %></span>
+                      </td>
+                      
+                       <td>
+                        <span class="text-muted"><%= list.rolee %></span>
                       </td>
                       <td>
-                        <span class="text-muted"><%= list.email %></span>
+                        <span class="text-muted"><%= list.statuss %></span>
                       </td>
                       <td>
-                        <span class="text-muted"><%= list.role %></span>
+                        <span class="text-muted"><%= list.farmm %></span>
                       </td>
                       <td>
-                        <span class="text-muted"><%= list.status %></span>
-                      </td>
-                      <td>
-                        <span class="text-muted"><%= list.farm %></span>
+                      <span class="text-muted"><%= list.email %></span>
                       </td>
                     </tr>
                   <% end %>
