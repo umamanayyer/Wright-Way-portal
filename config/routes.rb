@@ -11,4 +11,7 @@ Rails.application.routes.draw do
   get 'wagon', to: 'pages#wagon'
   get 'weekly', to: 'pages#weekly'
   get 'monthly', to: 'pages#monthly'
+  get 'login', to: 'sessions#new'
+  post 'login', to: 'sessions#create'  
+  delete 'logout', to: 'sessions#destroy'
 end
