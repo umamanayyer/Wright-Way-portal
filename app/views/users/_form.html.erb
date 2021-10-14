@@ -6,43 +6,73 @@
         <div class="form-group row"> 
             <%= f.label :email, class: 'col-sm-2 col-form-label text-light'%>
             <div class="col-sm-10">
-              <%= f.email_field :email, class: 'form-control shadow rounded', placeholder: 'Enter Email'  %>
+              <%= f.email_field :email, class: 'form-control shadow rounded', placeholder: 'Enter Email' %>
             </div>
+        </div>
+        <div class="form-group row"> 
+          <%= f.label :password, class: 'col-sm-2 col-form-label text-light'%>
+          <div class="col-sm-10">
+            <%= f.password_field :password, class: 'form-control shadow rounded', placeholder: 'Enter Password'  %>
+          </div>
         </div>
         <div class="form-group row"> 
         <%= f.label :first, class: 'col-sm-2 col-form-label text-light'%>
         <div class="col-sm-10">
-          <%= f.text_field :first, class: 'form-control shadow rounded', placeholder: 'Enter first name'  %>
+          <%= f.text_field :first, class: 'form-control shadow rounded', placeholder: 'Enter first name', required: 'true'  %>
         </div>
       </div>
       <div class="form-group row"> 
         <%= f.label :last, class: 'col-sm-2 col-form-label text-light'%>
         <div class="col-sm-10">
-          <%= f.text_field :last, class: 'form-control shadow rounded', placeholder: 'Enter last name'  %>
+          <%= f.text_field :last, class: 'form-control shadow rounded', placeholder: 'Enter last name', required: 'true'  %>
         </div>
       </div>
       <div class="form-group row"> 
         <%= f.label :prefered, class: 'col-sm-2 col-form-label text-light'%>
         <div class="col-sm-10">
-          <%= f.text_field :prefered, class: 'form-control shadow rounded', placeholder: 'Enter prefered name'  %>
+          <%= f.text_field :prefered, class: 'form-control shadow rounded', placeholder: 'Enter prefered name', required: 'true'   %>
         </div>
       </div>
+      
       <div class="form-group row"> 
         <%= f.label :rolee, class: 'col-sm-2 col-form-label text-light'%>
-        <div class="col-sm-10">
-          <%= f.text_field :rolee, class: 'form-control shadow rounded', placeholder: 'Select Role'  %>
+        <div class="col-sm-10" data-toggle="dropdown">
+          <%= f.text_field :rolee, class: 'form-control shadow rounded', placeholder: 'Type role from list', required: 'true'   %>
+          <div class="dropdown-menu">
+          <a class="dropdown-item disabled" href="#">Developer</a>
+          <a class="dropdown-item disabled" href="#">Admin</a>
+          <a class="dropdown-item disabled" href="#">Manager</a>
+          <a class="dropdown-item disabled" href="#">Mechanic</a>
+          <a class="dropdown-item disabled" href="#"> Farm Assistant</a>
+          <a class="dropdown-item disabled" href="#">Admin</a>
+        </div>
         </div>
       </div>
+
       <div class="form-group row"> 
         <%= f.label :statuss, class: 'col-sm-2 col-form-label text-light'%>
-        <div class="col-sm-10">
-          <%= f.text_field :statuss, class: 'form-control shadow rounded', placeholder: 'Select Status'  %>
+        <div class="col-sm-10" data-toggle="dropdown">
+          <%= f.text_field :statuss, class: 'form-control shadow rounded', placeholder: 'Type status from list', required: 'true'   %>
+          <div class="dropdown-menu">
+            <a class="dropdown-item disabled" href="#">Active</a>
+            <a class="dropdown-item disabled" href="#">Non Active</a>
+          </div>
         </div>
       </div>
+
       <div class="form-group row"> 
         <%= f.label :farmm, class: 'col-sm-2 col-form-label text-light'%>
-        <div class="col-sm-10">
-          <%= f.text_field :farmm, class: 'form-control shadow rounded', placeholder: 'Select Status'  %>
+        <div class="col-sm-10" data-toggle="dropdown">
+          <%= f.text_field :farmm, class: 'form-control shadow rounded', placeholder: 'Type Farm from list', required: 'true'   %>
+          <div class="dropdown-menu">
+            <a class="dropdown-item disabled" href="#">Administrator</a>
+            <a class="dropdown-item disabled" href="#">Manager</a>
+            <a class="dropdown-item disabled" href="#">Mechanic</a>
+            <a class="dropdown-item disabled" href="#">Otaio</a>
+            <a class="dropdown-item disabled" href="#">Otaio Manager</a>
+            <a class="dropdown-item disabled" href="#">St Andrews Manager</a>
+            <a class="dropdown-item disabled" href="#">Ms Andrews</a>
+          </div>
         </div>
       </div>
        
