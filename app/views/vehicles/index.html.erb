@@ -1,0 +1,72 @@
+
+<div class="container">
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-body">
+              <h5 class="display-2 bg-light text-dark text-center bgr">List of Vehicles</h5>
+            </div>
+            <div class="table-responsive" id="style-1">
+                <table class="table no-wrap user-table mb-0 shadow text-white bg-dark rounded scrollbar">
+                  <thead>
+                    <tr>
+                      <th scope="col" class="border-0 text-uppercase font-medium pl-4">id 
+                      </th>
+                     
+                      <th scope="col" class="border-0 text-uppercase font-medium">registration</th>
+                      <th scope="col" class="border-0 text-uppercase font-medium">make</th>
+                      <th scope="col" class="border-0 text-uppercase font-medium">model/th>
+                      <th scope="col" class="border-0 text-uppercase font-medium">color</th>
+                      <th scope="col" class="border-0 text-uppercase font-medium">year</th>
+                      <th scope="col" class="border-0 text-uppercase font-medium">registration Expires</th>
+                      <th scope="col" class="border-0 text-uppercase font-medium">w.o.f Expires</th>
+                      <th scope="col" class="border-0 text-uppercase font-medium">service due</th>
+                      <th scope="col" class="border-0 text-uppercase font-medium">tyre pressure</th>
+                     
+                      
+                    </tr>
+                  </thead>
+                  <tbody>
+                  <% @vehicles.each do |list| %>
+                    <tr>
+                      <td class="pl-4"><%= list.id %></td>
+                     
+                     
+                      
+                      <td>
+                          <h6 class="font-medium mb-0"><%= list.registration%></h5> 
+                      </td>
+                      <td>
+                        <span class="text-muted"><%= list.make %></span>
+                      </td>
+                      <td>
+                        <span class="text-muted"><%= list.model %></span>
+                      </td>
+                      
+                       <td>
+                        <span class="text-muted"><%= list.color %></span>
+                      </td>
+                      <td>
+                        <span class="text-muted"><%= list.year %></span>
+                      </td>
+                      <td>
+                        <span class="text-muted"><%= list.reg_expire %></span>
+                      </td>
+                      <td>
+                      <span class="text-muted"><%= list.wof_expire %></span>
+                      </td>
+                      <td>
+                        <span class="text-muted"><%= list.service_due %></span>
+                      </td>
+                      <td>
+                      <span class="text-muted"><%= list.tyre_pressure %></span>
+                      </td>
+                    </tr>
+                  <% end %>
+                  </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
