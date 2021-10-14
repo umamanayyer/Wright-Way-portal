@@ -17,7 +17,7 @@ class UsersController < ApplicationController
     if @user.save
   
     flash[:notice] = "User Added !"
-    redirect_to user_path(@user)
+    redirect_to users_path
     else
         render 'new'
     end
