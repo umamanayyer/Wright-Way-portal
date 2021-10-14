@@ -34,10 +34,11 @@ class UsersController < ApplicationController
     else
     render 'edit'
     end
-end
+  end
 
+private
 def user_params
-  params.require(:user).permit(:email, :password_digest, :first_name, :last_name, :prefered_name, :role, :status, :farm)
+  params.require(:user).permit(:email, :password, :first_name, :last_name, :prefered_name, :role, :status, :farm)
 end
 
 
