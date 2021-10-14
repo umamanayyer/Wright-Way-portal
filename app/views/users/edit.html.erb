@@ -1,4 +1,75 @@
 
  <h1 class="display-2 text-white pr-3 pl-3 text-center bgr mt-3">Edit Profile</h1>
- <%= render 'form' %>
+ 
+ <div class="container">
+<%= render 'shared/errors', obj: @user %>
+  <div class="row jusitfy-content-center">
+    <div class="col-12">
+        <%= form_with(model: @user, local: true, class: 'shadow p-3 mb-3 bg-dark rounded') do |f| %>
+        <div class="form-group row"> 
+            <%= f.label :email, class: 'col-sm-2 col-form-label text-light'%>
+            <div class="col-sm-10">
+              <%= f.email_field :email, class: 'form-control shadow rounded', placeholder: 'Enter Email' %>
+            </div>
+        </div>
+        <div class="form-group row"> 
+          <%= f.label :password, class: 'col-sm-2 col-form-label text-light'%>
+          <div class="col-sm-10">
+            <%= f.password_field :password, class: 'form-control shadow rounded', placeholder: 'Enter Password'  %>
+          </div>
+        </div>
+        <div class="form-group row"> 
+        <%= f.label :first, class: 'col-sm-2 col-form-label text-light'%>
+        <div class="col-sm-10">
+          <%= f.text_field :first, class: 'form-control shadow rounded', placeholder: 'Enter first name', required: 'true'  %>
+        </div>
+      </div>
+      <div class="form-group row"> 
+        <%= f.label :last, class: 'col-sm-2 col-form-label text-light'%>
+        <div class="col-sm-10">
+          <%= f.text_field :last, class: 'form-control shadow rounded', placeholder: 'Enter last name', required: 'true'  %>
+        </div>
+      </div>
+      <div class="form-group row"> 
+        <%= f.label :prefered, class: 'col-sm-2 col-form-label text-light'%>
+        <div class="col-sm-10">
+          <%= f.text_field :prefered, class: 'form-control shadow rounded', placeholder: 'Enter prefered name', required: 'true'   %>
+        </div>
+      </div>
+      
+      <div class="form-group row"> 
+        <%= f.label :rolee, class: 'col-sm-2 col-form-label text-light'%>
+        <div class="col-sm-10" data-toggle="dropdown">
+          <%= f.text_field :rolee, class: 'bg-dark form-control shadow rounded ',disabled: true, placeholder: 'Type role from list', required: 'true'   %>
+        </div>
+      </div>
+
+      <div class="form-group row"> 
+        <%= f.label :statuss, class: 'col-sm-2 col-form-label text-light'%>
+        <div class="col-sm-10" data-toggle="dropdown">
+          <%= f.text_field :statuss, class: 'bg-dark form-control shadow rounded',disabled: true, placeholder: 'Type status from list', required: 'true'   %>
+        </div>
+      </div>
+
+      <div class="form-group row"> 
+        <%= f.label :farmm, class: 'col-sm-2 col-form-label text-light '%>
+        <div class="col-sm-10" data-toggle="dropdown">
+          <%= f.text_field :farmm, class: 'bg-dark form-control shadow rounded',disabled: true, placeholder: 'Type Farm from list', required: 'true'   %>
+        </div>
+      </div>
+       
+        
+
+        
+        <div class="form-group row justify-content-center">
+          <%=f.submit(@user.new_record? ? "Create New User" : "Update account", class:'btn btn-outline-light btn-lg')  %>
+        </div>
+        <% end %>
+    </div>
+  </div>
+</div>
+
+
+
+
  

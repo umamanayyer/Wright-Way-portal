@@ -132,13 +132,13 @@
     {
       background: #F5F5F5;
       overflow-x: scroll;
-      overflow-y: hidden;
+      overflow-y: scroll;
     }
     .scrollbarV
     {
       background: #F5F5F5;
-      overflow-y: hidden;
-      overflow-x: hidden;
+      overflow-y: scroll;
+      overflow-x: scroll;
     }
     
     #style-1::-webkit-scrollbar-track
